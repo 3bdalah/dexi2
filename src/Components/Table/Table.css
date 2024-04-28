@@ -1,0 +1,131 @@
+.table-users {
+  width: 99%;
+  margin: 5px auto;
+  /* position: relative; */
+  overflow-x: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  justify-content: center;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #eee;
+}
+
+.custom-table thead {
+  background-color: #f9fafc;
+}
+.custom-table thead th,
+.custom-table thead td {
+  padding: 8px 5px 5px 5px;
+}
+.custom-table th,
+.custom-table td {
+  /* border: 1px solid #ddd; */
+  padding: 15px 5px 15px 5px;
+  background-color: white;
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+}
+
+.custom-table tbody tr {
+  border: 1px solid #ededed;
+}
+
+.custom-table tbody tr .img_with_name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.custom-table tbody tr .img_with_name img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.custom-table tbody tr .img_with_name span {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.custom-table tbody tr .img_with_name .useremail {
+  color: #aaa;
+}
+.custom-table tbody tr .usertitle span {
+  display: flex;
+  text-transform: capitalize;
+}
+.custom-table tbody tr .usertitle span:last-child {
+  color: #aaa;
+}
+
+.custom-table tbody tr .userStatus span {
+  color: rgb(10, 61, 10);
+  padding: 2px 2px 5px 2px;
+  /* height: 20px; */
+  border-radius: 5px;
+  background-color: rgba(13, 155, 13, 0.3);
+}
+.custom-table tbody tr .userRole {
+  color: #aaa;
+}
+.custom-tablet body tr td span[text="active"] {
+  color: red;
+}
+.custom-table tbody tr td:last-child {
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.custom-table tbody tr td:last-child span:last-child {
+  margin-right: 10px;
+  background-color: #fff;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  cursor: pointer;
+  color: blue;
+}
+
+.more {
+  width: 150px;
+  /* margin: 10px auto; */
+  display: block;
+  margin-left: 45%;
+  margin-top: 10px;
+  /* position: absolute; */
+  padding: 10px 5px;
+  /* margin: 10px calc(150 - 50%); */
+}
+
+/* ========================== */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 99;
+  top: 0;
+  left: 0;
+  padding: 5px;
+}
+.close {
+  cursor: pointer;
+  border: none;
+  margin: 10px auto;
+  /* width: 50px; */
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px 5px;
+  background-color: rgb(209, 2, 2);
+}
